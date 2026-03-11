@@ -39,7 +39,7 @@ Install Python on your machine.
 
 Clone the repository:
 
-git clone https://github.com/YOUR-USERNAME/multi-user-task-manager-cli.git
+git clone (https://github.com/NathnF0/Manager_Tasks.git)
 
 Open the project folder.
 
