@@ -1,11 +1,13 @@
-Multi User Task Manager (CLI)
+📋 Multi User Task Manager (CLI)
 
-A simple command-line task manager built with Python that supports multiple users.
-Each user can manage their own tasks, which are stored locally using JSON persistence.
+Multi User Task Manager is a simple command-line task management system built with Python.
+It supports multiple users, allowing each user to manage their own tasks independently.
 
-The application automatically generates demo users on first run so anyone can test the system immediately.
+All tasks are stored locally using JSON persistence, ensuring that data remains available between executions.
 
-Features
+The application also generates demo users automatically on the first run so anyone can test the system immediately.
+
+🚀 Features
 
 Multi-user support
 
@@ -25,28 +27,34 @@ Persistent storage using JSON
 
 Automatic demo data generation on first run
 
-Technologies
+🧠 How It Works
 
-Python
+Each user has their own list of tasks stored locally in a JSON file.
 
-JSON file storage
+When the program starts, users can:
 
-Command Line Interface (CLI)
+Select or create a user
 
-How to Run
+Manage tasks through the command line interface
 
-Install Python on your machine.
+Update task status (complete, edit, delete)
+
+The program automatically saves all changes to a JSON file, allowing task data to persist between sessions.
+
+💻 Installation
 
 Clone the repository:
 
-git clone (https://github.com/NathnF0/Manager_Tasks.git)
+git clone https://github.com/NathnF0/Manager_Tasks.git
 
-Open the project folder.
+Enter the project folder:
+
+cd Manager_Tasks
 
 Run the program:
 
 python main.py
-Demo Users
+👥 Demo Users
 
 When the program runs for the first time, it automatically creates demo users:
 
@@ -55,34 +63,42 @@ demo2
 
 These users already contain example tasks so you can test the system quickly.
 
-Data Storage
+💾 Data Storage
 
-All data is stored in a local JSON file:
+All data is stored locally in a JSON file:
 
 tasks.json
 
-This file is ignored by Git using .gitignore so every new user running the project will generate their own demo data.
+This file is ignored by Git using .gitignore, so every new user running the project will generate their own demo data automatically.
 
-Project Structure
+🛠 Technologies
+
+Python
+
+JSON file storage
+
+Command Line Interface (CLI)
+
+📂 Project Structure
 multi-user-task-manager-cli
 │
 ├── main.py
 ├── README.md
 └── .gitignore
-Future Improvements
+📌 Future Improvements
 
 Possible improvements for future versions:
 
-User passwords
+User authentication with passwords
 
 Task priorities
 
 Due dates
 
-Better terminal UI
+Improved terminal interface
 
 Code modularization
 
-License
+📜 License
 
 This project is open source and available for learning and educational purposes.
