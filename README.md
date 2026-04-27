@@ -1,104 +1,74 @@
-📋 Multi User Task Manager (CLI)
+# ⚡ DIRECT TASKS : CORE SYSTEM
 
-Multi User Task Manager is a simple command-line task management system built with Python.
-It supports multiple users, allowing each user to manage their own tasks independently.
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Terminal](https://img.shields.io/badge/CLI-Terminal-000?style=for-the-badge&logo=gnumetadata&logoColor=white)
 
-All tasks are stored locally using JSON persistence, ensuring that data remains available between executions.
+**Direct Tasks** é um gerenciador de tarefas via terminal (CLI) desenvolvido para alta performance e organização modular. Esqueça interfaces pesadas; aqui o foco é **velocidade, diretrizes claras e controle total.**
 
-The application also generates demo users automatically on the first run so anyone can test the system immediately.
+---
 
-🚀 Features
+## 🖥️ INTERFACE OPERACIONAL
 
-Multi-user support
+O sistema conta com um dashboard dinâmico que oferece:
+* **Barra de Progresso Visual:** Acompanhe sua produtividade em tempo real.
+* **Priorização por Cores:** Identifique o que é crítico instantaneamente.
+* **Filtros Avançados:** Alterne entre tarefas pendentes, concluídas ou visão geral.
+* **Logs de Feedback:** Confirmações de ações e alertas de falhas críticas.
 
-Create new users
+---
 
-Add tasks
+## 🛠️ ARQUITETURA DO PROJETO
 
-List tasks
+O núcleo do sistema é dividido em três pilares fundamentais:
 
-Mark tasks as completed
+| Módulo | Função |
+| :--- | :--- |
+| **`main.py`** | Controlador central, gerencia o loop de eventos e comandos. |
+| **`interface.py`** | Engine visual, cuida das cores, molduras e barras de progresso. |
+| **`manager.py`** | Cérebro lógico, processa dados, usuários e persistência em JSON. |
 
-Edit existing tasks
+---
 
-Delete tasks
+## 🚀 COMO EXECUTAR
 
-Persistent storage using JSON
+1. **Requisitos:** Certifique-se de ter o Python 3.x instalado.
+2. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/NathnF0/Manager_Tasks.git](https://github.com/NathnF0/Manager_Tasks.git)
+3. Inicie o Núcleo:
 
-Automatic demo data generation on first run
-
-🧠 How It Works
-
-Each user has their own list of tasks stored locally in a JSON file.
-
-When the program starts, users can:
-
-Select or create a user
-
-Manage tasks through the command line interface
-
-Update task status (complete, edit, delete)
-
-The program automatically saves all changes to a JSON file, allowing task data to persist between sessions.
-
-💻 Installation
-
-Clone the repository:
-
-git clone https://github.com/NathnF0/Manager_Tasks.git
-
-Enter the project folder:
-
-cd Manager_Tasks
-
-Run the program:
-
+Bash
 python main.py
-👥 Demo Users
+📑 DIRETRIZES DE COMANDO
+Dentro do terminal, utilize os atalhos rápidos:
 
-When the program runs for the first time, it automatically creates demo users:
+(A) Add: Registra uma nova diretriz no banco.
 
-demo1
-demo2
+(C) Concluir: Alterna o status de conclusão de uma tarefa.
 
-These users already contain example tasks so you can test the system quickly.
+(D) Deletar: Remove um registro permanentemente.
 
-💾 Data Storage
+(F) Filtro: Muda a perspectiva de visualização.
 
-All data is stored locally in a JSON file:
+`(S)air**: Encerra a sessão atual do operador.
 
-tasks.json
+🛡️ SEGURANÇA E DADOS
+Os dados são persistidos de forma estruturada no arquivo tasks.json. Cada operador possui seu próprio espaço isolado, garantindo que suas tarefas não se misturem com as de outros perfis registrados no mesmo sistema.
 
-This file is ignored by Git using .gitignore, so every new user running the project will generate their own demo data automatically.
+---
+## 👤 AUTOR
 
-🛠 Technologies
-
-Python
-
-JSON file storage
-
-Command Line Interface (CLI)
-
-📂 Project Structure
-multi-user-task-manager-cli
-│
-├── main.py
-├── README.md
-└── .gitignore
-📌 Future Improvements
-
-Possible improvements for future versions:
-
-User authentication with passwords
-
-Task priorities
-
-Due dates
-
-Improved terminal interface
-
-Code modularization
-
-📜 License
-
-This project is open source and available for learning and educational purposes.
+<table align="left">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/NathnF0">
+        <img src="https://github.com/NathnF0.png" width="100px;" alt="Galaxy Profile Picture"/><br />
+        <sub><b>Nathn (NathnF0)</b></sub>
+      </a>
+    </td>
+    <td>
+      <b>Desenvolvedor Principal</b><br>
+      Responsável pela arquitetura do sistema, engine de interface e lógica de persistência de dados.
+    </td>
+  </tr>
+</table>
